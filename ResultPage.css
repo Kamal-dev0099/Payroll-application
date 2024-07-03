@@ -1,0 +1,150 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("bg.png"); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ResultPage component styles */
+.ResultPage {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent background overflow */
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; /* Adjust header height as needed */
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background for header */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px; /* Adjust padding as needed */
+    z-index: 1; /* Ensure header is above background */
+}
+
+.logo {
+    width: 93px;
+    height: 93px;
+    border-radius: 83%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: auto;
+    margin-top: 35px;
+    margin-left: -8px;
+}
+
+.content {
+    max-width: 800px;
+    margin-top: 20px; /* Adjust margin to provide space for the header */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 0; /* Ensure content is behind header */
+}
+
+.content h1 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.content th, .content td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.content th {
+    background-color: #f2f2f2;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.download-button, .email-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.download-button:hover, .email-button:hover {
+    background-color: #0056b3;
+}
+
+.profile-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 100; /* Ensure profile icon is above other content */
+}
+
+.profile-icon-img {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Oval shape */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 70px; /* Adjust distance from top */
+    right: 20px; /* Adjust right positioning */
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 10;
+    display: none;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333333;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-content button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #dc3545; /* Red color for logout button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dropdown-content button:hover {
+    background-color: #c82333; /* Darker red color on hover */
+}
